@@ -16,10 +16,23 @@ In `prometheus.yml`, my configuration for prometheus-moto-exporer looks like:
 
 With `<ipv4address>` being the IP and following that, the (hopefully correct) port # for prometheus-moto-exporter.
 
+# Features
+  
+I tried my best to add any interesting info available from prometheus-moto-exporter, including:
+  
+- Cable modem connection status
+- Basic info about the modem, such as serial # and firmware version
+- Diagnostic information, such as # of locked channels, power, symbol rate, signal to noise, and error rates.
+  
 # Disclaimers
 
 As hinted at above, I don't have experience interpreting cable modem related metrics, thus it is very possible I made mistakes on this dashboard. Apologies and kindly submit a PR if you have better suggestions, I'll happly accept.
 
 Additionally, this dashboard only been tested with a Motorola MB8611 Cable Modem for approximately ~24 hours as of this writing.
 
-Finally, no promises this dashboard is applicable to other Motorola MBxxxx cable modems as I do not have any on hand to test.
+Finally, please note that all data visualized in this dashboard comes from <a href="https://github.com/jahkeup/prometheus-moto-exporter">prometheus-moto-exporter<a/>. All this dashboard does is make it a lot easier to visualize / interpret.
+
+# Screenshots
+  
+  <img src="mb8611-grafana-1.png">
+  
