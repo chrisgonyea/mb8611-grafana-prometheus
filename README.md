@@ -5,6 +5,15 @@ Attempt at a Grafana dashboard for the Motorola MB8611 cable modem, using data p
 
 This dashboard assumes you have installed/configured <a href="https://github.com/jahkeup/prometheus-moto-exporter">prometheus-moto-exporter<a/>, Prometheus, and Grafana.
 
+In `prometheus.yml`, my configuration looks like:
+
+```
+  - job_name: 'mb8611'
+    scrape_interval: 15s
+    static_configs:
+    - targets: ['<ipv4address>:9731']
+```
+
 # Disclaimers
 
 As hinted at above, I don't have experience interpreting cable modem related metrics, thus it is very possible I made mistakes on this dashboard. Apologies and kindly submit a PR if you have better suggestions, I'll happly accept.
