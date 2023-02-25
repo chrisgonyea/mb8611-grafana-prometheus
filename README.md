@@ -5,7 +5,7 @@ Attempt at a Grafana dashboard for the Motorola MB8611 cable modem, using data p
 
 This dashboard assumes you have installed/configured <a href="https://github.com/jahkeup/prometheus-moto-exporter">prometheus-moto-exporter<a/>, Prometheus, and Grafana.
 
-In `prometheus.yml`, my configuration looks like:
+In `prometheus.yml`, my configuration for prometheus-moto-exporer looks like:
 
 ```
   - job_name: 'mb8611'
@@ -13,6 +13,8 @@ In `prometheus.yml`, my configuration looks like:
     static_configs:
     - targets: ['<ipv4address>:9731']
 ```
+
+With `<ipv4address>` being the IP and following that, the (hopefully correct) port # for prometheus-moto-exporter.
 
 # Disclaimers
 
