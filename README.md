@@ -1,2 +1,14 @@
 # mb8611-grafana-prometheus
-Grafana dashboard for the MB8611 cable modem
+Attempt at a Grafana dashboard for the Motorola MB8611 cable modem along with <a href="https://github.com/jahkeup/prometheus-moto-exporter">prometheus-moto-exporter<a/>. This dahsboard is heavily inspired presentation wise by <a href="https://github.com/ickymettle/netgear_cm_exporter/blob/master/grafana/dashboard_screenshot.png">this screenshot</a> for <a href="https://github.com/ickymettle/netgear_cm_exporter">netgear_cm_exporter<a>.
+
+# Prerequisits
+
+This dashboard assumes you have installed/configured <a href="https://github.com/jahkeup/prometheus-moto-exporter">prometheus-moto-exporter<a/>, Prometheus, and Grafana.
+
+# Disclaimers
+
+As hinted at above, I don't have experience interpreting cable modem related metrics, thus it is very possible I made mistakes on this dashboard. Apologies and kindly submit a PR if you have better suggestions, I'll happly accept.
+
+Additionally, this dashboard only been tested with a Motorola MB8611 Cable Modem for approximately ~24 hours as of this writing.
+
+Finally, no promises this dashboard is applicable to other Motorola MBxxxx cable modems as I do not have any on hand to test.
